@@ -146,3 +146,42 @@ footer {
   font-size: 0.9em;
   color: #444;
 }
+/* Menu burger (mobile) */
+.burger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: var(--text-color);
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    background-color: white;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    display: none;
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+
+  .burger {
+    display: flex;
+  }
+}
+
