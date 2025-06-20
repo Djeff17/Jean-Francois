@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Jean-François Huet</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="cv.html">CV</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <h1>Contactez-moi</h1>
+  </header>
+
+  <section class="contact">
+    <h2>Formulaire de contact</h2>
+    <form class="contact-form" action="mailto:djeffhuet@gmail.com" method="post" enctype="text/plain">
+      <input type="text" name="name" placeholder="Votre nom" required />
+      <input type="email" name="email" placeholder="Votre email" required />
+      <textarea name="message" rows="5" placeholder="Votre message" required></textarea>
+      <button type="submit">Envoyer</button>
+    </form>
+    <p>Ou contactez-moi directement par email : <a href="mailto:djeffhuet@gmail.com">djeffhuet@gmail.com</a></p>
+  </section>
+
+  <footer>
+    © 2025 Jean-François Huet — Tous droits réservés
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
